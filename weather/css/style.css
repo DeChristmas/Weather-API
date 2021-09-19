@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Rubik:wght@300&display=swap');
+
+   body{
+       background:url("../img/pozadina2.jpg") no-repeat;
+       width: 1200px;
+       height: 945px;
+       font-family: 'Rubik', sans-serif;
+       background-size:cover;
+       overflow: hidden;
+    }
+  
+  .date{
+      font-size: 21px;
+  }
+
+    .blackbar{
+        position: absolute;
+        left: 1000px;
+        font-size: 90pt;
+        top: 195px;
+        color: white; 
+    }
+    .search{
+        position: absolute;
+        top: 50px;
+        left: 83%;
+        transform: translate(-50%,-50%);
+        background-color: black;
+        height: 40px;
+        border-radius: 40px;
+        padding: 10px;
+    } 
+    .search-buton{
+        color:white;
+        float: right;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background:grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+        cursor: pointer;
+    }  
+    .search-text{
+        border:none;
+        background: none;
+        outline: none;
+        float: left;
+        padding: 0;
+        color:white;
+        font-size: 16px;
+        transition: 0.4s;
+        line-height: 40px;
+        width: 0px;
+       
+
+    }
+    .search:hover > .search-text{
+        width: 150px;
+        padding: 0 5px;
+    }
+    .search:hover > .search-buton{
+      background:black;
+    }
+    .png {
+    width: 80%;
+    margin: 0 auto;
+    }
+    .main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 412px;
+    height: 72vh;
+    background: url("../img/vreme.jpg") no-repeat center;
+    background-size: cover;
+    border-radius: 60px;
+    overflow: hidden;
+    position: relative;
+    left: 730px;
+    top: 100px;
+   
+    }
+    .main-png::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to botttom,
+        rgba(0,0,0,0),
+        rgba(0,0,0,.6));
+    z-index: 0;
+    
+    }
+
+    .top {
+    text-align: center;
+    z-index: 999;
+    }
+
+     .top h1 {
+    position: relative;
+    color: white;
+    line-height: 2;
+    top: -43px;
+    }
+
+    .top .mistake {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    }
+
+   .icon {
+    text-align: center;
+    padding-top: 15px;
+    position: relative;
+    
+   }
+
+   .location {
+    padding-bottom: 15px;
+    text-align: center;
+    color: white;
+    line-height: 1.6;
+   }
+   .location .city {
+    font-size: 30px;
+    font-weight: lighter;
+   }
+
+   .information {
+    width: 100%;
+    position: relative;
+    padding-top: 28px;
+    color: white;
+    text-align: center;
+   }
+
+    .information::before {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    }
+
+    .information > * {
+    padding-bottom: 15px;
+    }
+ 
+@media only screen and (min-width:1025px) and (max-width: 1280px){
+
+        .blackbar{
+            position: absolute;
+            left: 250px;
+            font-size: 30pt;
+            top: 260px;
+            color: white;
+            
+        }
+        .search{
+            position: absolute;
+            top: 28px;
+            left: 68%;
+            transform: none;
+            background-color: black;
+            height: 40px;
+            border-radius: 40px;
+            padding: 10px;
+            
+        } 
+        .search-buton{
+            color:white;
+            float: right;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #aaa9b0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.4s;
+            cursor: pointer;
+        }  
+        .search-text{
+            border:none;
+            background: none;
+            outline: none;
+            float: left;
+            padding: 0;
+            color:white;
+            font-size: 16px;
+            transition: 0.4s;
+            line-height: 40px;
+            width: 150px;
+           
+    
+        }
+        
+        .search:hover > .search-text{
+            width: 150px;
+            padding: 0 10px;
+        }
+      .search:hover > .search-buton{
+          background:black;
+          
+        }         
+    
+    .main-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 94%;
+        max-width: 421px;
+        height: 68vh;
+        background: url(../img/vreme.jpg) no-repeat center;
+        background-size: cover;
+        border-radius: 60px;
+        overflow: hidden;
+        position: relative;
+        left: 400px;
+        top: 130px;
+        
+        }
+        .top h1 {
+            position: center;
+            color: white;
+            line-height: 2;
+            top: 5px;
+            }
+        .information {
+                width: 100%;
+                position: relative;
+                padding-top: 28px;
+                top: -30px;
+                color: white;
+                text-align: center;
+               }
+            }
+@media only screen and (min-width:768px) and (max-width: 1024px){
+
+                       body{
+                       width: auto;
+                       
+                        }
+                        .blackbar{
+                            position: absolute;
+                            left: 250px;
+                            font-size: 30pt;
+                            top: 260px;
+                            color: white;
+                            
+                        }
+                        .search{
+                            position: absolute;
+                            top: 28px;
+                            left: 27%;
+                            transform: none;
+                            background-color: black;
+                            height: 40px;
+                            border-radius: 40px;
+                            padding: 10px;
+                            width: 39%;
+                        } 
+                        .search-buton{
+                            color:white;
+                            float: right;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            background: #aaa9b0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            transition: 0.4s;
+                            cursor: pointer;
+                        }  
+                        .search-text{
+                            border:none;
+                            background: none;
+                            outline: none;
+                            float: left;
+                            padding: 0;
+                            color:white;
+                            font-size: 16px;
+                            transition: 0.4s;
+                            line-height: 40px;
+                            width: 150px;
+                           
+                    
+                        }
+                        
+                      
+                      .search:hover > .search-buton{
+                          background:black;
+                          
+                        }         
+                    
+                    .main-box {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        width: 94%;
+                        max-width: 421px;
+                        height: 50vh;
+                        background: url(../img/vreme.jpg) no-repeat center;
+                        background-size: cover;
+                        border-radius: 60px;
+                        overflow: hidden;
+                        position: relative;
+                        left: 270px;
+                        top: 156px;
+                        }
+                        .top h1 {
+                            position: center;
+                            color: white;
+                            line-height: 2;
+                            top: 5px;
+                            }
+                        .information {
+                                width: 100%;
+                                position: relative;
+                                padding-top: 28px;
+                                top: -30px;
+                                color: white;
+                                text-align: center;
+                               }
+                            }    
+ @media only screen and (min-width:481px) and (max-width: 768px) {
+        
+                               body{
+                               width: auto;
+                               }
+                                .blackbar{
+                                    position: absolute;
+                                    left: 250px;
+                                    font-size: 30pt;
+                                    top: 260px;
+                                    color: white;
+                                    
+                                }
+                                .search{
+                                    position: absolute;
+                                    top: 45px;
+                                    left: 25%;
+                                    transform: none;
+                                    background-color: black;
+                                    height: 40px;
+                                    border-radius: 40px;
+                                    padding: 10px;
+                                    width: 45%;
+                                } 
+                                .search-buton{
+                                    color:white;
+                                    float: right;
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 50%;
+                                    background: #aaa9b0;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    transition: 0.4s;
+                                    cursor: pointer;
+                                }  
+                                .search-text{
+                                    border:none;
+                                    background: none;
+                                    outline: none;
+                                    float: left;
+                                    padding: 0;
+                                    color:white;
+                                    font-size: 16px;
+                                    transition: 0.4s;
+                                    line-height: 40px;
+                                    width: 150px;
+                                   
+                            
+                                }
+                              .search:hover > .search-buton{
+                                  background:black;
+                                  
+                                }         
+                            
+                            .main-box {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 48%;
+                                height: 74vh;
+                                background: url(../img/vreme.jpg) no-repeat center;
+                                background-size: cover;
+                                border-radius: 50px;
+                                overflow: hidden;
+                                position: relative;
+                                left:187px;
+                                top: 140px;
+                                }
+                                .top h1 {
+                                    position: center;
+                                    color: white;
+                                    line-height: 2;
+                                    top: 5px;
+                                    }
+                                .information {
+                                        width: 100%;
+                                        position: relative;
+                                        padding-top: 28px;
+                                        top: -30px;
+                                        color: white;
+                                        text-align: center;
+                                       }
+                                    }            
+@media only screen and (min-width:320px) and (max-width: 480px) {
+        
+    body{
+        width: auto;
+       
+    }
+        .location{
+            text-align: center;
+            padding-bottom: 15px;
+            
+        }
+        .blackbar{
+            position: absolute;
+            left: 250px;
+            font-size: 30pt;
+            top: 260px;
+            color: white;
+            
+        }
+        .search{
+            position: absolute;
+            top: 28px;
+            left: 12%;
+            transform: none;
+            background-color: black;
+            height: 40px;
+            border-radius: 40px;
+            padding: 10px;
+            width: 70%;
+        } 
+        .search-buton{
+            color:white;
+            float: right;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #aaa9b0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.4s;
+            cursor: pointer;
+        }  
+        .search-text{
+            border:none;
+            background: none;
+            outline: none;
+            float: left;
+            padding: 0;
+            color:white;
+            font-size: 16px;
+            transition: 0.4s;
+            line-height: 40px;
+            width: 150px;
+           
+    
+        }
+      .search:hover > .search-buton{
+          background:black;
+          
+        }         
+    
+    .main-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 82%;
+        height: 64vh;
+        background: url(../img/vreme.jpg) no-repeat center;
+        background-size: cover;
+        border-radius: 40px;
+        overflow: hidden;
+        position: relative;
+        left:31px;
+        top: 170px;
+        }
+        .top h1 {
+   
+            color: white;
+            line-height: 2;
+            top: 41px;
+            font-size:17pt;
+            }
+        .information {
+                width: 103%;
+                position: relative;
+                padding-top: -30px;
+                top: -35px;
+                color: white;
+                text-align: center;
+               }
+              
+            }
+            @media only screen and (min-width:100px) and (max-width: 280px) {
+        
+                body{
+                    width: auto;
+                   
+                }
+                    
+                    .blackbar{
+                        position: absolute;
+                        left: 250px;
+                        font-size: 30pt;
+                        top: 260px;
+                        color: white;
+                        
+                    }
+                    .search{
+                        position: absolute;
+                        top: 28px;
+                        left: 12%;
+                        transform: none;
+                        background-color: black;
+                        height: 40px;
+                        border-radius: 40px;
+                        padding: 10px;
+                        width: 70%;
+                    } 
+                    .search-buton{
+                        color:white;
+                        float: right;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background: #aaa9b0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: 0.4s;
+                        cursor: pointer;
+                    }  
+                    .search-text{
+                        border:none;
+                        background: none;
+                        outline: none;
+                        float: left;
+                        padding: 0;
+                        color:white;
+                        font-size: 16px;
+                        line-height: 40px;
+                        width: 150px;
+                       
+                
+                    }
+                    .search:hover > .search-text{
+                        width: 130px;
+                        
+                    }
+                    
+                  .search:hover > .search-buton{
+                      background:black;
+                      
+                    }         
+                
+                .main-box {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 90%;
+                    height: 65vh;
+                    background: url(../img/vreme.jpg) no-repeat center;
+                    background-size: cover;
+                    border-radius: 40px;
+                    overflow: hidden;
+                    position: relative;
+                    left:15px;
+                    top: 170px;
+                    }
+                    .top h1 {
+                        color: white;
+                        line-height: 3;
+                        top: 44px;
+                        font-size:17pt;
+                        }
+                    .information {
+                         
+                            width: 100%;
+                            position: relative;
+                            padding-top: 17px;
+                            top: -30px;
+                            color: white;
+                            text-align: center;
+                           }
+                         
+                           
+                        }
